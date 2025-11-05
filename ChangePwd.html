@@ -1,0 +1,110 @@
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Password change</title>
+</head>
+<body>
+<h4>Password Change Page</h4>
+<form action="ChangePassword">
+<label>Old Password </label>
+<input type="password" name="opwd"><br><br>
+
+<label>New Password </label>
+<input type="password" name="npwd"><br><br>
+
+<label>Confirm New Password </label>
+<input type="password" name="cnpwd"><br><br>
+
+<input type="submit" value="Change Password">
+</form>
+
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Password Change - GQT Bank</title>
+<style>
+  body {
+    background: linear-gradient(120deg, #112D4E 70%, #3F72AF 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    color: #112D4E;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .change-password-box {
+    background: #fff;
+    border-radius: 14px;
+    padding: 40px 36px 30px 36px;
+    box-shadow: 0 0 24px rgba(17,45,78,0.13);
+    border: 2px solid #3F72AF;
+    max-width: 360px;
+    text-align: center;
+  }
+  h4 {
+    color: #3F72AF;
+    margin-bottom: 26px;
+  }
+  label {
+    display: block;
+    margin: 18px 0 8px 0;
+    text-align: left;
+    color: #112D4E;
+    font-weight: 600;
+  }
+  input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1.6px solid #3F72AF;
+    font-size: 1em;
+    background: #f5f9fd;
+    color: #112D4E;
+    transition: border 0.3s;
+  }
+  input[type="password"]:focus {
+    border: 2px solid #112D4E;
+    outline: none;
+  }
+  input[type="submit"] {
+    background: #3F72AF;
+    color: #fff;
+    font-weight: 700;
+    padding: 12px 0;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 24px;
+    transition: background 0.3s;
+  }
+  input[type="submit"]:hover {
+    background: #112D4E;
+  }
+</style>
+</head>
+<body>
+<form class="change-password-box" action="ChangePassword" method="post">
+  <h4>Password Change Page</h4>
+  
+  <label for="opwd">Old Password</label>
+  <input type="password" id="opwd" name="opwd" required>
+  
+  <label for="npwd">New Password</label>
+  <input type="password" id="npwd" name="npwd" required>
+  
+  <label for="cnpwd">Confirm New Password</label>
+  <input type="password" id="cnpwd" name="cnpwd" required>
+  
+  <input type="submit" value="Change Password">
+</form>
+</body>
+</html>

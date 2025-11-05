@@ -1,0 +1,182 @@
+<!--  
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login - GQT Bank</title>
+<style>
+  body {
+    background: linear-gradient(120deg, #112D4E 70%, #3F72AF 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    color: #112D4E;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .login-box {
+    background: #fff;
+    border-radius: 14px;
+    max-width: 340px;
+    padding: 38px 32px 28px 32px;
+    box-shadow: 0 0 20px rgba(17,45,78,0.14);
+    border: 2px solid #3F72AF;
+  }
+  h2 {
+    text-align: center;
+    color: #3F72AF;
+    margin-bottom: 24px;
+    font-size: 1.8em;
+  }
+  label {
+    display: block;
+    margin: 14px 0 6px 2px;
+    color: #112D4E;
+    font-weight: 600;
+  }
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 16px;
+    border: 1.6px solid #3F72AF;
+    border-radius: 6px;
+    font-size: 1em;
+    background: #f5f9fd;
+    color: #112D4E;
+    transition: border 0.3s;
+  }
+  input[type="text"]:focus, input[type="password"]:focus {
+    border: 2px solid #112D4E;
+    outline: none;
+  }
+  input[type="submit"] {
+    background: #3F72AF;
+    color: #fff;
+    font-weight: 700;
+    padding: 12px 0;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 1.08em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  input[type="submit"]:hover {
+    background: #112D4E;
+  }
+</style>
+</head>
+<body>
+<form class="login-box" action="Login" method="post">
+  <h2>Login to GQT Bank</h2>
+
+  <label>Email</label>
+  <input type="text" name="email" required>
+
+  <label>Password</label>
+  <input type="password" name="pwd" required>
+
+  <input type="submit" value="Login">
+</form>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login - GQT Bank</title>
+<style>
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    min-height: 100vh;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(120deg, #18345c 0%, #1b2b42 80%);
+    color: #18345c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .login-card {
+    background: #fff;
+    border-radius: 16px;
+    width: 350px;
+    padding: 36px 36px 28px 36px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.14);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  h2 {
+    text-align: center;
+    color: #295b8a;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 26px;
+    font-family: "Segoe UI", Arial, sans-serif;
+  }
+  label {
+    color: #18345c;
+    font-weight: 600;
+    font-size: 1.04em;
+    margin-bottom: 7px;
+    padding-left: 2px;
+  }
+  input[type="text"], input[type="password"] {
+    padding: 12px 15px;
+    border: 1.5px solid #295b8a;
+    border-radius: 8px;
+    font-size: 1.05em;
+    background: #f5f9fd;
+    color: #18345c;
+    margin-bottom: 16px;
+    outline: none;
+    transition: border 0.22s;
+  }
+  input[type="text"]:focus, input[type="password"]:focus {
+    border: 2px solid #38b000;
+    background: #f0f7fa;
+  }
+  input[type="submit"] {
+    background: #295b8a;
+    color: #fff;
+    font-size: 1.13em;
+    font-weight: bold;
+    padding: 13px 0;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 100%;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(41,91,138,0.11);
+    transition: background 0.21s, color 0.21s;
+    letter-spacing: 0.5px;
+  }
+  input[type="submit"]:hover {
+    background: #3777b6;
+    color: #fff;
+  }
+</style>
+</head>
+<body>
+<form class="login-card" action="Login" method="post">
+  <h2>Login to GQT Bank</h2>
+
+  <label for="email">Email</label>
+  <input type="text" id="email" name="email" required>
+
+  <label for="password">Password</label>
+  <input type="password" id="password" name="password" required>
+
+  <input type="submit" value="Login">
+</form>
+</body>
+</html>
+

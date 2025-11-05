@@ -1,0 +1,108 @@
+<!--  
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Password Mismatch</title>
+</head>
+<body>
+<h3>Incorrect New password and conform password</h3>
+<form action="ChangePassword">
+<label>Old Password </label>
+<input type="password" name="opwd"><br><br>
+
+<label>New Password </label>
+<input type="password" name="npwd"><br><br>
+
+<label>Confirm New Password </label>
+<input type="password" name="cnpwd"><br><br>
+
+<input type="submit" value="Change Password">
+</form>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Password Mismatch - GQT Bank</title>
+<style>
+  body {
+    background: linear-gradient(120deg, #112D4E 70%, #3F72AF 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    color: #112D4E;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mismatch-box {
+    background: #fff;
+    border-radius: 14px;
+    padding: 48px 40px 32px 40px;
+    box-shadow: 0 0 24px rgba(17,45,78,0.13);
+    border: 2px solid #3F72AF;
+    max-width: 400px;
+    text-align: center;
+  }
+  h3 {
+    color: #D90429;
+    margin-bottom: 30px;
+    font-size: 1.3em;
+  }
+  form label {
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    margin: 8px 0 6px 0;
+  }
+  form input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1.5px solid #3F72AF;
+    font-size: 1em;
+    background: #f5f9fd;
+    color: #112D4E;
+    transition: border 0.3s;
+    margin-bottom: 15px;
+  }
+  form input[type="password"]:focus {
+    border: 2px solid #112D4E;
+    outline: none;
+  }
+  form input[type="submit"] {
+    background: #3F72AF;
+    color: #fff;
+    font-weight: 700;
+    padding: 12px 0;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 1.08em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  form input[type="submit"]:hover {
+    background: #112D4E;
+  }
+</style>
+</head>
+<body>
+  <div class="mismatch-box">
+    <h3>Incorrect New password and confirm password</h3>
+    <form action="ChangePassword" method="post">
+      <label>Old Password</label>
+      <input type="password" name="opwd" required>
+      <label>New Password</label>
+      <input type="password" name="npwd" required>
+      <label>Confirm New Password</label>
+      <input type="password" name="cnpwd" required>
+      <input type="submit" value="Change Password">
+       <a href="Logout">Logout</a>
+    </form>
+  </div>
+</body>
+</html>

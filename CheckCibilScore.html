@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Check CIBIL Score - GQT Bank</title>
+<style>
+body {
+	font-family: 'Segoe UI';
+	background: linear-gradient(120deg, #112D4E 70%, #3F72AF 100%);
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+}
+
+.form-box {
+	background: white;
+	padding: 40px;
+	border-radius: 18px;
+	box-shadow: 0 0 26px rgba(17, 45, 78, 0.16);
+	width: 320px;
+	text-align: center;
+}
+
+input[type="text"] {
+	width: 100%;
+	padding: 12px;
+	margin-top: 20px;
+	border: 1.6px solid #3F72AF;
+	border-radius: 8px;
+	font-size: 1.1em;
+}
+
+input[type="submit"] {
+	margin-top: 26px;
+	padding: 15px 20px;
+	width: 100%;
+	background: #3F72AF;
+	color: white;
+	font-weight: bold;
+	font-size: 1.15em;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background: #112D4E;
+}
+</style>
+</head>
+<body>
+	<div class="form-box">
+		<h2>Check CIBIL Score</h2>
+		<form action="CheckCibilScore">
+			<input type="text" name="accno" placeholder="Enter Account Number"
+				required> <input type="submit" value="Check Score">
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="Delete" method="post">
+<label>Account Number </label>
+<input type="text" name="accno"><br><br>
+<input type="submit" value="Delete"><br><br>
+</form>
+
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Delete Account - GQT Bank</title>
+<style>
+  body {
+    background: linear-gradient(120deg, #112D4E 70%, #3F72AF 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    color: #112D4E;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .delete-box {
+    background: #fff;
+    border-radius: 14px;
+    max-width: 360px;
+    padding: 44px 38px 36px 38px;
+    box-shadow: 0 0 22px rgba(17,45,78,0.14);
+    border: 2px solid #3F72AF;
+    text-align: center;
+  }
+  h2 {
+    color: #3F72AF;
+    margin-bottom: 26px;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  label {
+    display: block;
+    text-align: left;
+    margin-bottom: 9px;
+    font-weight: 600;
+    color: #112D4E;
+    font-size: 1.18em;
+  }
+  input[type="text"] {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1.6px solid #3F72AF;
+    font-size: 1.13em;
+    background: #f5f9fd;
+    color: #112D4E;
+    margin-bottom: 18px;
+    transition: border 0.3s;
+  }
+  input[type="text"]:focus {
+    border: 2px solid #112D4E;
+    outline: none;
+  }
+  .action-btn,
+  .action-btn:visited,
+  .action-btn:focus,
+  .action-btn:active {
+    display: block;
+    width: 100%;
+    background: #5484c4;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 15px 0 0 0;
+    padding: 9px 0;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+    transition: background 0.2s;
+  }
+  .action-btn:hover {
+    background: #112D4E;
+    color: #fff;
+  }
+</style>
+</head>
+<body>
+  <form class="delete-box" action="Delete" method="post">
+    <h2>Delete Account</h2>
+    <label for="accno">Account Number</label>
+    <input type="text" id="accno" name="accno" required>
+    <input type="submit" class="action-btn" value="Delete">
+    <a href="Logout" class="action-btn">Logout</a>
+  </form>
+</body>
+</html>
+
+
+
+
